@@ -20,13 +20,12 @@ def load_employee_faces(folder_path):
 
 # Function to mark attendance
 def mark_attendance(employee_faces, employee_names):
-    attendance_file = "C:/Projects/Attendance system/employee_attendance.xlsx"  # Specify full file path
+    attendance_file = "C:/Projects/Attendance_system/employee_attendance.xlsx"  # Specify full file path
+    video_capture = cv2.VideoCapture(0)
+   
     
     attendance_record = {name: False for name in employee_names}  # Track attendance for each employee
     detected_in_frame = {name: False for name in employee_names}  # Track whether each employee is detected in the current frame
-    
-    # OpenCV capture from external camera
-    video_capture = cv2.VideoCapture(1)
     
     while True:
         ret, frame = video_capture.read()   
