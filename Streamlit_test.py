@@ -20,7 +20,7 @@ def load_employee_faces(folder_path):
 
 # Function to mark attendance
 def mark_attendance(employee_faces, employee_names):
-    attendance_file = "C:/Projects/Attendance_system/employee_attendance.xlsx"  # Specify full file path
+    attendance_file = "C:/Projects/Attendance system/employee_attendance.xlsx"  # Specify full file path
     video_capture = cv2.VideoCapture(0)
    
     
