@@ -13,7 +13,7 @@
 <h2>Requirements:</h2>
 
 <ul>
-  <li>Python 3.x</li>
+  <li>Python 3.10</li>
   <li>OpenCV (cv2)</li>
   <li>face_recognition</li>
   <li>openpyxl</li>
